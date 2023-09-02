@@ -7,9 +7,12 @@
 
 import SwiftUI
 
+
+
 struct DSA: Hashable, Identifiable {
     var id = UUID()
     var dsa_type: DSA_type = .linear
+    var level: Level = .basic
     var title: String = ""
     var description: String = ""
     
@@ -38,4 +41,13 @@ struct DSA: Hashable, Identifiable {
     var isMap: Bool {
         dsa_type == .map
     }
+}
+
+enum Level: String, Identifiable, CaseIterable {
+    case basic = "Basic"
+    case medium = "Medium"
+    case advanced = "Advanced"
+    
+    var id: String { self.rawValue }
+    var name: String {self.rawValue}
 }

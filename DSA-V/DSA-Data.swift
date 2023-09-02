@@ -12,18 +12,33 @@ class DSA_Data: ObservableObject {
     @Published var DSAs: [DSA] = [
         DSA(
             dsa_type: .linear,
+            level: .basic,
             title: "Array",
             description: "Associative Container"
         ),
         DSA(
             dsa_type: .pointer,
+            level: .basic,
             title: "Linked List",
             description: "Associative Container"
         ),
         DSA(
             dsa_type: .map,
+            level: .medium,
             title: "Hash Map",
             description: "Associative Container"
+        ),
+        DSA(
+            dsa_type: .linear,
+            level: .medium,
+            title: "Stack",
+            description: "FILO Container"
+        ),
+        DSA(
+            dsa_type: .linear,
+            level: .medium,
+            title: "Queue",
+            description: "FIFO Container"
         )
     ]
     func sortedDSAs(dsa_type: DSA_type) -> Binding<[DSA]>{
@@ -57,14 +72,7 @@ class DSA_Data: ObservableObject {
         )
     }
 }
-enum Level: String, Identifiable, CaseIterable {
-    case basic = " Basic "
-    case medium = " Medium "
-    case advanced = " Advanced "
-    
-    var id: String { self.rawValue }
-    var name: String {self.rawValue}
-}
+
 
 enum DSA_type: String, CaseIterable, Identifiable {
     case linear = " Linear "

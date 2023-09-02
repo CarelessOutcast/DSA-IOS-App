@@ -8,19 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		E8403EF52A8576C50027EFB1 /* DSA_VApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8403EF42A8576C50027EFB1 /* DSA_VApp.swift */; };
-		E8403EF72A8576C50027EFB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8403EF62A8576C50027EFB1 /* ContentView.swift */; };
 		E8403EF92A8576C80027EFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8403EF82A8576C80027EFB1 /* Assets.xcassets */; };
 		E8403EFD2A8576C80027EFB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8403EFC2A8576C80027EFB1 /* Preview Assets.xcassets */; };
 		E8403F042A857D290027EFB1 /* DSA-List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8403F032A857D290027EFB1 /* DSA-List.swift */; };
 		E8403F062A857D4C0027EFB1 /* DSA-Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8403F052A857D4C0027EFB1 /* DSA-Row.swift */; };
 		E8403F0A2A857F4D0027EFB1 /* DSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8403F092A857F4D0027EFB1 /* DSA.swift */; };
 		E8403F0C2A86E7620027EFB1 /* DSA-Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8403F0B2A86E7620027EFB1 /* DSA-Data.swift */; };
+		E8403F0E2A8713610027EFB1 /* DSA-Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8403F0D2A8713610027EFB1 /* DSA-Details.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E8403EF12A8576C50027EFB1 /* DSA-V.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSA-V.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8403EF42A8576C50027EFB1 /* DSA_VApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSA_VApp.swift; sourceTree = "<group>"; };
-		E8403EF62A8576C50027EFB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8403EF82A8576C80027EFB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8403EFA2A8576C80027EFB1 /* DSA_V.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DSA_V.entitlements; sourceTree = "<group>"; };
 		E8403EFC2A8576C80027EFB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -28,6 +27,7 @@
 		E8403F052A857D4C0027EFB1 /* DSA-Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DSA-Row.swift"; sourceTree = "<group>"; };
 		E8403F092A857F4D0027EFB1 /* DSA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSA.swift; sourceTree = "<group>"; };
 		E8403F0B2A86E7620027EFB1 /* DSA-Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DSA-Data.swift"; sourceTree = "<group>"; };
+		E8403F0D2A8713610027EFB1 /* DSA-Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DSA-Details.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				E8403EF42A8576C50027EFB1 /* DSA_VApp.swift */,
-				E8403EF62A8576C50027EFB1 /* ContentView.swift */,
 				E8403F032A857D290027EFB1 /* DSA-List.swift */,
+				E8403F0D2A8713610027EFB1 /* DSA-Details.swift */,
 				E8403F052A857D4C0027EFB1 /* DSA-Row.swift */,
 				E8403F092A857F4D0027EFB1 /* DSA.swift */,
 				E8403F0B2A86E7620027EFB1 /* DSA-Data.swift */,
@@ -154,7 +154,7 @@
 				E8403F0C2A86E7620027EFB1 /* DSA-Data.swift in Sources */,
 				E8403F042A857D290027EFB1 /* DSA-List.swift in Sources */,
 				E8403F062A857D4C0027EFB1 /* DSA-Row.swift in Sources */,
-				E8403EF72A8576C50027EFB1 /* ContentView.swift in Sources */,
+				E8403F0E2A8713610027EFB1 /* DSA-Details.swift in Sources */,
 				E8403EF52A8576C50027EFB1 /* DSA_VApp.swift in Sources */,
 				E8403F0A2A857F4D0027EFB1 /* DSA.swift in Sources */,
 			);
