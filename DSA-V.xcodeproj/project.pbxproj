@@ -15,6 +15,7 @@
 		E8403F0A2A857F4D0027EFB1 /* DSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8403F092A857F4D0027EFB1 /* DSA.swift */; };
 		E8403F0C2A86E7620027EFB1 /* DSA-Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8403F0B2A86E7620027EFB1 /* DSA-Data.swift */; };
 		E8403F0E2A8713610027EFB1 /* DSA-Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8403F0D2A8713610027EFB1 /* DSA-Details.swift */; };
+		E8403F102AA3F8950027EFB1 /* DSA-Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8403F0F2AA3F8950027EFB1 /* DSA-Shapes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E8403F092A857F4D0027EFB1 /* DSA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSA.swift; sourceTree = "<group>"; };
 		E8403F0B2A86E7620027EFB1 /* DSA-Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DSA-Data.swift"; sourceTree = "<group>"; };
 		E8403F0D2A8713610027EFB1 /* DSA-Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DSA-Details.swift"; sourceTree = "<group>"; };
+		E8403F0F2AA3F8950027EFB1 /* DSA-Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DSA-Shapes.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				E8403EF42A8576C50027EFB1 /* DSA_VApp.swift */,
 				E8403F032A857D290027EFB1 /* DSA-List.swift */,
 				E8403F0D2A8713610027EFB1 /* DSA-Details.swift */,
+				E8403F0F2AA3F8950027EFB1 /* DSA-Shapes.swift */,
 				E8403F052A857D4C0027EFB1 /* DSA-Row.swift */,
 				E8403F092A857F4D0027EFB1 /* DSA.swift */,
 				E8403F0B2A86E7620027EFB1 /* DSA-Data.swift */,
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8403F0C2A86E7620027EFB1 /* DSA-Data.swift in Sources */,
+				E8403F102AA3F8950027EFB1 /* DSA-Shapes.swift in Sources */,
 				E8403F042A857D290027EFB1 /* DSA-List.swift in Sources */,
 				E8403F062A857D4C0027EFB1 /* DSA-Row.swift in Sources */,
 				E8403F0E2A8713610027EFB1 /* DSA-Details.swift in Sources */,

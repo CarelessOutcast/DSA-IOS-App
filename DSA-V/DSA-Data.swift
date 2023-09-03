@@ -14,31 +14,36 @@ class DSA_Data: ObservableObject {
             dsa_type: .linear,
             level: .basic,
             title: "Array",
-            description: "Associative Container"
+            description: "Associative Container",
+            explanation: ""
         ),
         DSA(
             dsa_type: .pointer,
             level: .basic,
             title: "Linked List",
-            description: "Associative Container"
+            description: "Associative Container",
+            explanation: ""
         ),
         DSA(
             dsa_type: .map,
             level: .medium,
             title: "Hash Map",
-            description: "Associative Container"
+            description: "Associative Container",
+            explanation: ""
         ),
         DSA(
             dsa_type: .linear,
             level: .medium,
             title: "Stack",
-            description: "FILO Container"
+            description: "FILO Container",
+            explanation: ""
         ),
         DSA(
             dsa_type: .linear,
             level: .medium,
             title: "Queue",
-            description: "FIFO Container"
+            description: "FIFO Container",
+            explanation: ""
         )
     ]
     func sortedDSAs(dsa_type: DSA_type) -> Binding<[DSA]>{
