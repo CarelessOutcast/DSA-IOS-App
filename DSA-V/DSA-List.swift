@@ -11,28 +11,32 @@ struct DSA_List: View {
     @EnvironmentObject var DSAData: DSA_Data
     
     var body: some View {
-        List {
-            ForEach(DSA_type.allCases, id: \.self){ dsa_type in
-                if !DSAData.sortedDSAs(dsa_type: dsa_type).isEmpty {
-                    Section(content: {
-                        ForEach(DSAData.sortedDSAs(dsa_type: dsa_type)){
-                            $dsa in
-                            NavigationLink {
-                                Text("DSA View")
-                            } label: {
-                                DSA_Row(dsa: dsa)
+        NavigationView{
+            VStack{
+                Text("").navigationTitle("Data Structs")
+                List {
+                    ForEach(DSA_type.allCases, id: \.self){ dsa_type in
+                        if !DSAData.sortedDSAs(dsa_type: dsa_type).isEmpty {
+                            Section(content: {
+                                ForEach(DSAData.sortedDSAs(dsa_type: dsa_type)){
+                                    $dsa in
+                                    NavigationLink {
+                                        DSA_Details(dsa: $dsa)
+                                    } label: {
+                                        DSA_Row(dsa: dsa)
+                                    }
+                                }
+                            }, header: {
+                                Text(dsa_type.name)
+                                    .font(.callout)
+                                    .fontWeight(.bold)
                             }
+                            )
                         }
-                    }, header: {
-                        Text(dsa_type.name)
-                            .font(.callout)
-                            .fontWeight(.bold)
                     }
-                    )
                 }
             }
         }
-        .navigationTitle("DataStructs")
     }
 }
 

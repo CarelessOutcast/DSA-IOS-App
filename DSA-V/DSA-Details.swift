@@ -16,30 +16,45 @@ var description: String = ""
 */
 struct DSA_Details: View {
     @Binding var dsa: DSA
+    @State var selectedTab: Tabs = .Text
     
     var body: some View {
-        ZStack{
-            Canvas { context, size in }
-                .frame(width: .infinity, height: .infinity)
-                .border(.blue)
-            List{
-                VStack{
-                    VStack(alignment: .leading){
-                        HStack{
-                            Text(dsa.title)
-                                .font(.title)
-                                .bold()
-                            Spacer()
-                            Text(dsa.level.name)
+        VStack(spacing:0){
+            ZStack{
+                switch selectedTab {
+                case .Text:
+                    VStack(spacing:0){
+                        Text("").navigationTitle(dsa.title)
+                        Divider()
+                        List{
+                            VStack(alignment: .leading){
+                                HStack{
+                                    Text(dsa.description)
+                                        .font(.title2)
+                                    Spacer()
+                                    Text(dsa.level.name)
+                                }
+                                Text(dsa.explanation)
+                            }
                         }
-                        Text(dsa.description)
-                            .font(.title2)
                     }
-                    VStack(alignment: .leading){
-                        Text(dsa.explanation)
+                case .Pseudo:
+                    ScrollView{
+                        VStack{
+                            Text("Pseudo")
+                        }
+                    }
+                case .Code:
+                    ScrollView{
+                        VStack{
+                            Text("Code")
+                        }
                     }
                 }
             }
+            Divider()
+            TabBar(selectedTab: $selectedTab)
+                .padding(.top, 12)
         }
     }
 }
